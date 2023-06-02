@@ -3,7 +3,7 @@ import "./Chart.css"
 
 function Chart({data, onClick}){
     return (
-        <div onClick={()=>onClick(data)}>
+        <div className="resize-drag yes-drop" onClick={()=>onClick(data)}>
         </div>
     )
 }
