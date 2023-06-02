@@ -9,6 +9,3 @@ function Chart({data, onClick}){
 }
 
 export default Chart
-
-
-Linegraph
