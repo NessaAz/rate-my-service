@@ -6,7 +6,7 @@ import data from './Utilities/Data/data'
 import Presentation from './Pages/Presentation/Presentation'
 
 function App() {
-  const [canvasData, setCanvasData] = useState(data)
+  const [globalState, setGlobalState] = useState({data: data, activeCanvasItem: {}})
 
   useEffect(()=>{
     // These functions accept css selectors and give them interactive 
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div id='app'>
-      <Presentation canvasData={canvasData} setCanvasData={setCanvasData}/>
+      <Presentation globalState={globalState} setGlobalState={setGlobalState}/>
     </div>
   )
 }

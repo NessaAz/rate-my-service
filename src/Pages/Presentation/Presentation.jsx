@@ -2,10 +2,10 @@ import React from "react";
 import Canvas from "../../Components/Canvas/Canvas";
 import "./Presentation.css"
 
-function Presentation({canvasData, setCanvasData}){
+function Presentation({globalState, setGlobalState}){
     return (
         <div id="presentation-page">
-            <Canvas canvasData={canvasData} setCanvasData={setCanvasData} />
+            <Canvas globalState={globalState} setGlobalState={setGlobalState} />
         </div>
     )
 }
