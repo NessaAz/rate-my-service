@@ -1,5 +1,6 @@
 :root {
   font-size: clamp(10px 1.3vh 16px);
+  --canvas-width: max(60vh, 23rem);
 }
 
 * {
