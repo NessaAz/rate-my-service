@@ -1,5 +1,7 @@
 .text-item {
   position: absolute;
+  display: flex;
+  align-items: center;
 }
 
 .resize-drag {
