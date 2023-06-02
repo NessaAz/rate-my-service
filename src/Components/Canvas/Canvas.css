@@ -1,0 +1,9 @@
+#canvas {
+    /* Aspect ratio of an A4 is 1.414. So height and width of the canvas 
+    should conform to this */
+    --length: max(60vh, 20rem);
+    width: var(--length);
+    height: calc(var(--length) * 1.414);
+    margin: auto;
+    background-color: green;
+}
