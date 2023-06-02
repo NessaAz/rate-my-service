@@ -4,20 +4,20 @@ import Text from "../Text/Text";
 
 function Canvas({globalState, setGlobalState}){
 
-    function updateActiveItem(data){
+    function updateActiveItem(canvasObject){
         setGlobalState(g => {
-            return {...g, activeCanvasItem: data}
+            return {...g, activeCanvasObject: canvasObject}
         })
     }
 
     return (
         <div id="canvas" className="dropzone drag-drop">
             {
-                globalState.data.map(data => {
-                    if(data.type === "text"){
-                        return <Text key={data.id} data={data} onClick={updateActiveItem}/>
-                    }else if (data.type === "chart"){
-                        return <Chart key={data.id} data={data} onClick={updateActiveItem} />
+                globalState.canvasObject.map(canvasObject => {
+                    if(canvasObject.type === "text"){
+                        return <Text key={canvasObject.id} canvasObject={canvasObject} onClick={updateActiveItem}/>
+                    }else if (canvasObject.type === "chart"){
+                        return <Chart key={canvasObject.id} canvasObject={canvasObject} onClick={updateActiveItem} />
                     }
                 })
             }

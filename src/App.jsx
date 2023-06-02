@@ -2,11 +2,11 @@ import React, {useEffect, useState} from 'react'
 import './App.css'
 import makeResizableAndDraggable from './Utilities/Interact/resizableDraggable'
 import dropZone from './Utilities/Interact/dropzone'
-import data from './Utilities/Data/data'
+import canvasObjects from './Utilities/Data/canvasObjects'
 import Presentation from './Pages/Presentation/Presentation'
 
 function App() {
-  const [globalState, setGlobalState] = useState({data: data, activeCanvasItem: {}})
+  const [globalState, setGlobalState] = useState({canvasObject: canvasObjects, activeCanvasObject: {}})
 
   useEffect(()=>{
     // These functions accept css selectors and give them interactive 

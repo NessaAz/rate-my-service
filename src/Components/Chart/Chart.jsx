@@ -1,9 +1,9 @@
 import React from "react";
 import "./Chart.css"
 
-function Chart({data, onClick}){
+function Chart({canvasObject, onClick}){
     return (
-        <div className="resize-drag yes-drop" onClick={()=>onClick(data)}>
+        <div className="resize-drag yes-drop" onClick={()=>onClick(canvasObject)}>
         </div>
     )
 }

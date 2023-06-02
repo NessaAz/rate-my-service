@@ -1,4 +1,4 @@
-const data = [
+const canvasObjects = [
     {
         id: 1,
         type: "text",
@@ -23,4 +23,4 @@ const data = [
     }
 ]
 
-export default data;
+export default canvasObjects;
