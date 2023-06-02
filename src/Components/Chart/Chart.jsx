@@ -1,7 +1,7 @@
 import React from "react";
 import "./Chart.css"
 
-function Chart(){
+function Chart({data}){
     return (
         <div >
         </div>

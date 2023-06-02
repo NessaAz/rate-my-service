@@ -1,11 +1,12 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import './App.css'
-import Text from './Components/Text/Text'
 import makeResizableAndDraggable from './Utilities/Interact/resizableDraggable'
 import dropZone from './Utilities/Interact/dropzone'
-import Canvas from './Components/Canvas/Canvas'
+import data from './Utilities/Data/data'
+import Presentation from './Pages/Presentation/Presentation'
 
 function App() {
+  const [canvasData, setCanvasData] = useState(data)
 
   useEffect(()=>{
     // These functions accept css selectors and give them interactive 
@@ -16,9 +17,7 @@ function App() {
 
   return (
     <div id='app'>
-
-      <Text />
-      <Canvas />
+      <Presentation canvasData={canvasData} setCanvasData={setCanvasData}/>
     </div>
   )
 }
