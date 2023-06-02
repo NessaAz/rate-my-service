@@ -1,7 +1,7 @@
 import interact from 'interactjs'
 
-function resizeDrag(){
-    interact('.resize-drag')
+function makeResizableAndDraggable(cssSelector){
+    interact(cssSelector)
       .resizable({
         // resize from all edges and corners
         edges: { left: true, right: true, bottom: true, top: true },
@@ -73,5 +73,5 @@ function dragMoveListener (event) {
   window.dragMoveListener = dragMoveListener;
 
 
-export default resizeDrag
+export default makeResizableAndDraggable
 export {dragMoveListener}
