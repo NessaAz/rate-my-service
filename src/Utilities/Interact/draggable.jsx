@@ -74,3 +74,4 @@ function dragMoveListener (event) {
 
 
 export default resizeDrag
+export {dragMoveListener}
