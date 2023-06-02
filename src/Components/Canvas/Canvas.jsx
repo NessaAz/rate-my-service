@@ -15,9 +15,9 @@ function Canvas({globalState, setGlobalState}){
             {
                 globalState.data.map(data => {
                     if(data.type === "text"){
-                        return <Text data={data} onClick={updateActiveItem}/>
+                        return <Text key={data.id} data={data} onClick={updateActiveItem}/>
                     }else if (data.type === "chart"){
-                        return <Chart data={data} onClick={updateActiveItem} />
+                        return <Chart key={data.id} data={data} onClick={updateActiveItem} />
                     }
                 })
             }
