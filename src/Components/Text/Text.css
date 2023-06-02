@@ -1,3 +1,7 @@
+.text-item {
+  position: absolute;
+}
+
 .resize-drag {
     background-color: #29e;
     color: white;
