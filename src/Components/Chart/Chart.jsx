@@ -1,9 +1,9 @@
 import React from "react";
 import "./Chart.css"
 
-function Chart({data}){
+function Chart({data, onClick}){
     return (
-        <div >
+        <div onClick={()=>onClick(data)}>
         </div>
     )
 }

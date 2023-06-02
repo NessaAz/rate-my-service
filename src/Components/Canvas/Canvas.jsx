@@ -3,14 +3,21 @@ import "./Canvas.css"
 import Text from "../Text/Text";
 
 function Canvas({globalState, setGlobalState}){
+
+    function updateActiveItem(data){
+        setGlobalState(g => {
+            return {...g, activeCanvasItem: data}
+        })
+    }
+
     return (
         <div id="canvas" className="dropzone drag-drop">
             {
                 globalState.data.map(data => {
                     if(data.type === "text"){
-                        return <Text data={data} />
+                        return <Text data={data} onClick={updateActiveItem}/>
                     }else if (data.type === "chart"){
-                        return <Chart data={data} />
+                        return <Chart data={data} onClick={updateActiveItem} />
                     }
                 })
             }
