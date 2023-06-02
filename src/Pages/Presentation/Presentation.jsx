@@ -4,7 +4,9 @@ import "./Presentation.css"
 
 function Presentation({canvasData, setCanvasData}){
     return (
-        <Canvas canvasData={canvasData} setCanvasData={setCanvasData} />
+        <div id="presentation-page">
+            <Canvas canvasData={canvasData} setCanvasData={setCanvasData} />
+        </div>
     )
 }
 
