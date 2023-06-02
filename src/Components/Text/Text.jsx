@@ -1,10 +1,12 @@
 import React from "react";
 import "./Text.css"
 
-function Text(){
+function Text({styles}){
     return (
-        <div className="resize-drag">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, eveniet.</p>
+        <div className="resize-drag yes-drop">
+            <div id="">
+
+            </div>
         </div>
     )
 }

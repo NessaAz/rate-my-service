@@ -3,7 +3,7 @@ import "./Canvas.css"
 
 function Canvas(){
     return (
-        <div id="canvas" className="dropzone .yes-drop">
+        <div id="canvas" className="dropzone drag-drop">
 
         </div>
     )

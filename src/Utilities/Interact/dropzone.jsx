@@ -7,7 +7,7 @@ interact('.dropzone').dropzone({
     // only accept elements matching this CSS selector
     accept: '.yes-drop',
     // Require a 75% element overlap for a drop to be possible
-    overlap: 0.1,
+    overlap: "pointer",
   
     // listen for drop related events:
   
@@ -16,7 +16,6 @@ interact('.dropzone').dropzone({
       event.target.classList.add('drop-active')
     },
     ondragenter: function (event) {
-        console.log("drag enter")
       var draggableElement = event.relatedTarget
       var dropzoneElement = event.target
   
