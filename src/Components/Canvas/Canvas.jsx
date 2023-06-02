@@ -1,6 +1,7 @@
 import React from "react";
 import "./Canvas.css"
 import Text from "../Text/Text";
+import Chart from "../Chart/Chart";
 
 function Canvas({globalState, setGlobalState}){
 

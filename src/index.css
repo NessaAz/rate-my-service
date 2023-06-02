@@ -10,3 +10,7 @@
 
   /* outline: solid red 0.1rem; */
 }
+
+.resize-drag {
+  position: relative;
+}
