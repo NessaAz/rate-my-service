@@ -1,6 +1,7 @@
 :root {
   font-size: clamp(10px 1.3vh 16px);
-  --canvas-width: max(60vw, 800px);
+  --canvas-width: max(50vw, 500px);
+  --navbar-height: 4rem;
 }
 
 * {
