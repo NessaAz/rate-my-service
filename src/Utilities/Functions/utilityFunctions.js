@@ -2,7 +2,7 @@ function convertRemToPixels(rem) {
     return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
 }
 
-function getSize(cssSelector){
+function getDOMElementSize(cssSelector){
     const element = document.querySelector(cssSelector)
     
     return {
@@ -11,4 +11,4 @@ function getSize(cssSelector){
     }
 }
 
-export {convertRemToPixels, getSize}
+export {convertRemToPixels, getDOMElementSize}
