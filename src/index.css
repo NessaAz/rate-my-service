@@ -15,7 +15,7 @@
 
 .resize-drag {
   position: absolute;
-  background-color: #29e;
+  background-color: transparent;
   color: white;
   font-size: 0.7rem;
 
@@ -26,6 +26,10 @@
 
   /* This makes things *much* easier */
   box-sizing: border-box;
+}
+
+.resize-drag.active {
+  border: dashed white 0.1rem;
 }
 
 ul li {
