@@ -3,3 +3,7 @@
     margin-top: calc(var(--navbar-height) + 0.5rem);
     position: relative;
 }
+
+#presentation-page #presentation-container {
+    margin-top: calc(var(--navbar-height) + 6.5rem);
+} 
