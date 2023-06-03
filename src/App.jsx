@@ -4,9 +4,10 @@ import makeResizableAndDraggable from './Utilities/Interact/resizableDraggable'
 import dropZone from './Utilities/Interact/dropzone'
 import canvasObjects from './Utilities/Data/canvasObjects'
 import Presentation from './Pages/Presentation/Presentation'
+import Navbar from './Components/Navbar/Navbar'
 
 function App() {
-  const [globalState, setGlobalState] = useState({canvasObject: canvasObjects, activeCanvasObject: {}})
+  const [globalState, setGlobalState] = useState({canvasObjects: canvasObjects, activeCanvasObject: {}})
 
   useEffect(()=>{
     // These functions accept css selectors and give them interactive 

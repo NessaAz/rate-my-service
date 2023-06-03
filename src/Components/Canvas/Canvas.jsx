@@ -14,7 +14,7 @@ function Canvas({globalState, setGlobalState}){
     return (
         <div id="canvas" className="dropzone drag-drop">
             {
-                globalState.canvasObject.map(canvasObject => {
+                globalState.canvasObjects.map(canvasObject => {
                     if(canvasObject.type === "text"){
                         return <Text key={canvasObject.id} canvasObject={canvasObject} onClick={updateActiveItem}/>
                     }else if (canvasObject.type === "chart"){
