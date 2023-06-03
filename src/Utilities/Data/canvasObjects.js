@@ -3,7 +3,7 @@ const canvasObjects = [
         id: 1,
         type: "text",
         size: {width: "8%", height: "2%"},
-        position: {top: "2", left: "10%"},
+        position: {top: "2%", left: "10%"},
         element: "p",
         content: "Text 1",
         contentStyle: {
@@ -24,7 +24,7 @@ const canvasObjects = [
     {
         id: 3,
         type: 'chart',
-        size: {width: "60%", height: "30%"},
+        size: {width: "70%", height: "40%"},
         position: {top: "7%", left: "4%"},
         contentStyle: {
 
