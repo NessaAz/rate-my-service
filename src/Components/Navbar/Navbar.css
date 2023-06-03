@@ -6,4 +6,5 @@
     height: var(--navbar-height);
     background-color: red;
     color: white;
+    z-index: 1;
 }
