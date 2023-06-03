@@ -1,0 +1,7 @@
+#object-actions {
+    position: absolute;
+    width: 18.5rem;
+    height: calc(100vh - var(--navbar-height) - 1rem);
+    background-color: #d4d4d4;
+    padding: 1rem;
+}

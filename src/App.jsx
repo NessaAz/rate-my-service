@@ -18,6 +18,7 @@ function App() {
 
   return (
     <div id='app'>
+      <Navbar />
       <Presentation globalState={globalState} setGlobalState={setGlobalState}/>
     </div>
   )

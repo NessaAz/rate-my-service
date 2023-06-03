@@ -2,4 +2,6 @@
     min-width: 100vw;
     margin-top: calc(var(--navbar-height) + 0.5rem);
     position: relative;
+
+    display: flex;
 }
