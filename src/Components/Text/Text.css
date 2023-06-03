@@ -8,17 +8,3 @@
   display: flex;
   align-items: center;
 }
-
-.resize-drag {
-  background-color: #29e;
-  color: white;
-  font-size: 0.7rem;
-
-  width: 5rem;
-  height: 5rem;
-
-  touch-action: none;
-
-  /* This makes things *much* easier */
-  box-sizing: border-box;
-}
