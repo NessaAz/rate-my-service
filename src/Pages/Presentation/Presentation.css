@@ -1,4 +1,5 @@
 #presentation-page {
     min-width: 100vw;
-    min-height: 100vh;
+    margin-top: var(--navbar-height);
+    position: relative;
 }
