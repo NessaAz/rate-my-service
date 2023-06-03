@@ -4,7 +4,7 @@ import createChart from "../../Utilities/Highcharts/CreateChart";
 
 function Chart({canvasObject, onClick}){
     const figureRef = useRef()
-    const itemStyle = {...canvasObject.size, ...canvasObject.position}
+    const itemStyle = {...canvasObject.size, ...canvasObject.position, transform: `scale(${canvasObject.scale})`}
 
     useEffect(()=>{
         createChart(`${figureRef.current.id}`, canvasObject)
