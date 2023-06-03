@@ -5,6 +5,7 @@
     height: calc(var(--canvas-width) * 1.414);
     margin: auto;
     background-color: #d4d4d4;
+    outline: 0.05rem solid white;
 
     position: relative;
 }
