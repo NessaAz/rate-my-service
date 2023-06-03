@@ -3,6 +3,7 @@
   --canvas-width: 47rem;
   --canvas-height: calc(1.414 * var(--canvas-width));
   --navbar-height: 4rem;
+  --object-editor-height: 6rem;
 }
 
 * {

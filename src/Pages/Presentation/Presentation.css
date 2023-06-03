@@ -1,9 +1,10 @@
 #presentation-page {
     min-width: 100vw;
-    margin-top: calc(var(--navbar-height) + 0.5rem);
+    margin-top: var(--navbar-height);
     position: relative;
+    margin-bottom: 0.5rem;
 }
 
 #presentation-page #presentation-container {
-    margin-top: calc(var(--navbar-height) + 6.5rem);
+    margin-top: calc(var(--navbar-height) + var(--object-editor-height));
 } 

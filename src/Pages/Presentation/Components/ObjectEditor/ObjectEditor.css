@@ -1,8 +1,9 @@
 #object-editor {
-    height: 6rem;
+    height: var(--object-editor-height);
     background-color: #d4d4d4;
     position: fixed;
     top: calc(var(--navbar-height) + 0.05rem);
     width: 100vw;
     z-index: 1;
+    border-bottom: 0.2rem solid white;
 }
