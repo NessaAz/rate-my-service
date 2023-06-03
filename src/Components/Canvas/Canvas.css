@@ -4,7 +4,7 @@
     width: var(--canvas-width);
     height: calc(var(--canvas-width) * 1.414);
     margin: auto;
-    background-color: green;
+    background-color: #d4d4d4;
 
     position: relative;
 }
