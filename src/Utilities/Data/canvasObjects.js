@@ -2,10 +2,10 @@ const canvasObjects = [
     {
         id: 1,
         type: "text",
-        size: {width: "50%", height: "10%"},
-        position: {top: "20%", left: "10%"},
+        size: {width: "8%", height: "2%"},
+        position: {top: "2", left: "10%"},
         element: "p",
-        content: "The quick brown fox jumps over the lazy white dog",
+        content: "Text 1",
         contentStyle: {
             fontSize: "1rem"
         }
@@ -13,10 +13,10 @@ const canvasObjects = [
     {
         id: 2,
         type: "text",
-        size: {width: "50%", height: "10%"},
-        position: {top: "50%", left: "40%"},
+        size: {width: "8%", height: "2%"},
+        position: {top: "5%", left: "20%"},
         element: "p",
-        content: "The quick brown fox jumps over the lazy white dog",
+        content: "Text 2",
         contentStyle: {
             fontSize: "1rem"
         }
@@ -24,6 +24,8 @@ const canvasObjects = [
     {
         id: 3,
         type: 'chart',
+        size: {width: "60%", height: "30%"},
+        position: {top: "7%", left: "4%"},
         contentStyle: {
 
         },
@@ -63,7 +65,8 @@ const canvasObjects = [
                         connectorAllowed: false
                     },
                     pointStart: 2010
-                }
+                },
+                enableMouseTracking: false
             },
         
             series: [{
@@ -91,7 +94,7 @@ const canvasObjects = [
             responsive: {
                 rules: [{
                     condition: {
-                        maxWidth: 500
+                        height: 500
                     },
                     chartOptions: {
                         legend: {
