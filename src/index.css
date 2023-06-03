@@ -29,7 +29,7 @@
 }
 
 .resize-drag.active {
-  border: dashed white 0.1rem;
+  outline: dashed white 0.1rem;
 }
 
 ul li {
