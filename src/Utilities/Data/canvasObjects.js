@@ -9,7 +9,8 @@ const canvasObjects = [
         element: "p",
         content: "Text 1",
         contentStyle: {
-            fontSize: "1rem"
+            fontSize: "1rem",
+            color: "black"
         }
     },
     {
@@ -22,7 +23,8 @@ const canvasObjects = [
         element: "p",
         content: "Text 2",
         contentStyle: {
-            fontSize: "1rem"
+            fontSize: "1rem",
+            color: "green"
         }
     },
     {
